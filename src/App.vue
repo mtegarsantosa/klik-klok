@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+<div>
+  <div class="switchTheme">
+    <a href="javascript:" @click="switchTheme()">
+      <span v-if="!light">🌞</span>
+      <span v-else>🌙</span>
+    </a>
   </div>
+  <router-view />
+</div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  data() {
+    return {
+      light: true
+    }
+  },
+  methods: {
+    switchTheme() {
+      let body = document.querySelector("body")
+      if (body.getAttribute("class") === "light-theme") {
+        body.setAttribute("class", "dark-theme")
+        this.light = false
+      } else {
+        body.setAttribute("class", "light-theme")
+        this.light = true
+      }
+    }
+  }
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+</script>
+<style scoped>
+  .switchTheme {
+    text-align: right;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .switchTheme a:hover {
+    text-decoration: none;
+  }
 </style>
