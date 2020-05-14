@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a02bcd22238a333f9267b7a828e9da21.js"
+  "/precache-manifest.f49939095531c4d49ec3939163f00024.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Klik-Klok"});

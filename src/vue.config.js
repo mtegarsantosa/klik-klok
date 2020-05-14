@@ -1,7 +1,5 @@
 module.exports = {
-    pwa: {
-        workboxOptions: {
-            skipWaiting: true
-        }
-    }
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/klik-klok/'
+  : '/'
 }

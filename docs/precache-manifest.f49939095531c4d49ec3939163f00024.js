@@ -54,5 +54,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
+  },
+  {
+    "revision": "2b3845f43296ec70830204a5fca86e59",
+    "url": "/ss/klik-klok-1.PNG"
+  },
+  {
+    "revision": "3cb27922bbcd6e527873bdad6fd8acb7",
+    "url": "/ss/klik-klok-2.PNG"
+  },
+  {
+    "revision": "690adff5ce0b0de7d987d5206d259779",
+    "url": "/ss/klik-klok-app.PNG"
+  },
+  {
+    "revision": "fe9723b5cf29afa48ec961464e90273f",
+    "url": "/ss/klik-klok-install.png"
   }
 ]);
